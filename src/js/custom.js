@@ -1,4 +1,4 @@
-import $ from './vendor/jquery';
+import $ from './vendor/jquery-setup';
 import shopByCategory from './sections/shop-by-category';
 
 $(() => {

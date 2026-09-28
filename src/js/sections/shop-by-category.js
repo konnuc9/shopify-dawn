@@ -1,4 +1,4 @@
-import $ from '../vendor/jquery';
+import $ from '../vendor/jquery-setup';
 import 'slick-carousel';
 
 const SELECTOR = '[data-shop-by-category]';
