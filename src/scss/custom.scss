@@ -1,0 +1,76 @@
+@use 'variables' as *;
+@use '../../node_modules/slick-carousel/slick/slick';
+@use 'sections/shop-by-category';
+
+body {
+    font-size: 16px;
+}
+
+// Announcement bar redesign: solid blue band, bold centered white text, underlined link
+.utility-bar {
+    background: $announcement-bg;
+
+    .announcement-bar__message {
+        color: $announcement-text;
+        font-weight: 700;
+
+        span {
+            color: inherit;
+        }
+    }
+
+    .announcement-bar__link {
+        color: $announcement-text;
+        text-decoration: underline;
+
+        &.animate-arrow svg {
+            display: none;
+        }
+    }
+}
+
+.header {
+    .header__heading-link {
+        .h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            color: $header-text-navy;
+        }
+    }
+
+    .header__inline-menu {
+        .header__menu-item {
+            color: $header-text-navy;
+            font-weight: 600;
+
+            span {
+                color: inherit;
+            }
+        }
+    }
+
+    .header__icons {
+        border-left: 1px solid $header-divider;
+        padding-left: 1.5rem;
+        margin-left: 1.5rem;
+
+        .header__icon,
+        .header__icon--account {
+            color: $header-text-navy;
+        }
+    }
+}
+
+.header:not(.drawer-menu).page-width {
+    max-width: unset;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-width {
+    max-width: unset;
+    padding: 0 40px;
+
+}
